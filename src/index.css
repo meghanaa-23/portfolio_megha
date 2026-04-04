@@ -892,3 +892,148 @@ a { text-decoration: none; color: inherit; }
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(126, 34, 206, 0.4);
 }
+
+/* Resume Viewer Page */
+.resume-viewer-page {
+  background: #f4f7f6;
+  color: #333;
+  min-height: 100vh;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 2000;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.resume-content-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  background: white;
+  padding: 60px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.resume-header {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.resume-header h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.resume-contact {
+  display: flex;
+  gap: 20px;
+  color: #666;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.resume-contact i {
+  color: var(--primary);
+}
+
+.resume-section {
+  margin-bottom: 30px;
+}
+
+.resume-section h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.resume-item {
+  margin-bottom: 20px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.item-sub {
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.skill-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill-tag {
+  padding: 5px 15px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.certs-list {
+  list-style: none;
+}
+
+.certs-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.certs-list li::before {
+  content: '•';
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 12px 24px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 3000;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-btn:hover {
+  transform: translateX(-5px);
+  background: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .resume-content-wrapper {
+    padding: 30px 20px;
+  }
+}
