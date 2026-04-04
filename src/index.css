@@ -869,3 +869,26 @@ a { text-decoration: none; color: inherit; }
         justify-content: center;
     }
 }
+
+/* Resume Download Icon Button */
+.btn-resume-download {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+.btn-resume-download:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(126, 34, 206, 0.4);
+}

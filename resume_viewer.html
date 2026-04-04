@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghana Manchala | Resume View</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-main: #333;
+            --text-muted: #666;
+            --primary: #7e22ce;
+            --secondary: #3b82f6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 50px 0; }
+        .resume-page {
+            max-width: 850px; margin: 0 auto; background: white; padding: 60px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1); border-radius: 8px;
+        }
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { font-family: 'Outfit', sans-serif; font-size: 2.5rem; color: var(--primary); }
+        .contact-info { display: flex; gap: 20px; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px; flex-wrap: wrap; }
+        .contact-info i { color: var(--primary); }
+
+        section { margin-bottom: 30px; }
+        h2 { font-family: 'Outfit', sans-serif; font-size: 1.5rem; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; color: var(--secondary); text-transform: uppercase; letter-spacing: 1px; }
+        
+        .item { margin-bottom: 20px; }
+        .item-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.1rem; }
+        .item-sub { color: var(--primary); font-size: 0.95rem; font-weight: 600; margin-bottom: 5px; }
+        .item-desc { font-size: 0.95rem; color: var(--text-muted); }
+
+        .skills-list { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+        .skill-tag { padding: 5px 15px; background: #f0f0f0; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+
+        .back-btn { 
+            position: fixed; top: 20px; left: 20px; padding: 10px 20px; background: var(--primary);
+            color: white; border-radius: 30px; font-weight: 600; text-decoration: none; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+        }
+
+        @media print {
+            body { padding: 0; background: white; }
+            .resume-page { box-shadow: none; width: 100%; margin: 0; padding: 0; }
+            .back-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+
+    <div class="resume-page">
+        <header>
+            <h1>MEGHANA MANCHALA</h1>
+            <div class="contact-info">
+                <span><i class="fa-solid fa-envelope"></i> manchalameghana89@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> 9652871980</span>
+                <span><i class="fa-solid fa-location-dot"></i> Karimnagar</span>
+                <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/meghana-manchala</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Objective</h2>
+            <p>Aspiring AI & ML student eager to apply knowledge in developing intelligent solutions. Adept at problem-solving and collaboration, I aim to contribute to cutting-edge projects while gaining hands-on experience in Artificial Intelligence and Machine Learning.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>B.Tech - Artificial Intelligence and Machine Learning</span>
+                    <span>2021 - Present</span>
+                </div>
+                <div class="item-sub">Kamala Institute of Technology & Science | CGPA: 8.1</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>Intermediate (MPC)</span>
+                    <span>2019 - 2021</span>
+                </div>
+                <div class="item-sub">Alphores Junior College | Percentage: 95.8%</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>STITCH & STYLE – Fabric Ville</span>
+                </div>
+                <div class="item-sub">Web Platform | Team Size: 4</div>
+                <p class="item-desc">A web-based platform to connect fashion designers, customers, and manufacturers. Streamlined the process of managing custom garment orders.</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>College Event Management</span>
+                </div>
+                <div class="item-sub">Frontend Development</div>
+                <p class="item-desc">Developed a web-based platform aimed at streamlining event management for colleges efficiently.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">HTML & CSS</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Data Engineering</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="item">
+                <div class="item-header">AWS Academy Cloud Computing & Data Engineering</div>
+            </div>
+            <div class="item">
+                <div class="item-header">AI for Beginners - Intel Corporation</div>
+            </div>
+            <div class="item">
+                <div class="item-header">AI Tools Workshop Certificate</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

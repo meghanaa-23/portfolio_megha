@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+const profileImg = "/profile.jpeg";
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -129,9 +130,12 @@ function App() {
                   <span>View Projects</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </a>
-                <a href="#contact" className="btn-secondary">
-                  <span>Get in Touch</span>
-                  <i className="fa-solid fa-envelope"></i>
+                <a href="/resume.docx" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                  <span>View Resume</span>
+                  <i className="fa-solid fa-file-lines"></i>
+                </a>
+                <a href="/resume.docx" download className="btn-resume-download">
+                  <i className="fa-solid fa-download"></i>
                 </a>
               </div>
               <div className="social-links fade-in-up">
@@ -150,7 +154,7 @@ function App() {
               <div className="profile-container">
                 <div className="profile-ring"></div>
                 <div className="profile-ring-2"></div>
-                <img src="/profile.jpeg" alt="Meghana Manchala" className="profile-image" />
+                <img src={profileImg} alt="Meghana Manchala" className="profile-image" />
               </div>
               <div className="floating-card card-1">
                 <i className="fa-solid fa-code"></i>
@@ -173,7 +177,7 @@ function App() {
             </div>
             <div className="about-content">
               <div className="about-image-container glass-card">
-                <img src="/profile.jpeg" alt="Meghana Manchala" className="about-image" />
+                <img src={profileImg} alt="Meghana Manchala" className="about-image" />
               </div>
               <div className="about-text glass-card">
                 <p>I am an aspiring AI & ML student currently in my third year of B.Tech at Kamala Institute of Technology & Science. My goal is to apply my knowledge in developing intelligent, scalable solutions and gain practical, hands-on experience in Artificial Intelligence.</p>
