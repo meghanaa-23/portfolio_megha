@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-const profileImg = "./profile.jpeg";
+const profileImg = "/profile.jpeg";
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -66,81 +66,20 @@ function App() {
   if (viewResume) {
     return (
       <div className="resume-viewer-page">
-        <button onClick={() => setViewResume(false)} className="back-btn">
-          <i className="fa-solid fa-arrow-left"></i> Back to Portfolio
-        </button>
-        <div className="resume-content-wrapper">
-          <header className="resume-header">
-            <h1>MEGHANA MANCHALA</h1>
-            <div className="resume-contact">
-                <span><i className="fa-solid fa-envelope"></i> manchalameghana89@gmail.com</span>
-                <span><i className="fa-solid fa-phone"></i> 9652871980</span>
-                <span><i className="fa-solid fa-location-dot"></i> Karimnagar</span>
-                <span><i className="fa-brands fa-linkedin"></i> @meghana-manchala</span>
-            </div>
-          </header>
-
-          <section className="resume-section">
-            <h2>Objective</h2>
-            <p>Aspiring AI & ML student eager to apply knowledge in developing intelligent solutions. Adept at problem-solving and collaboration, I aim to contribute to cutting-edge projects while gaining hands-on experience in Artificial Intelligence and Machine Learning.</p>
-          </section>
-
-          <section className="resume-section">
-            <h2>Education</h2>
-            <div className="resume-item">
-                <div className="item-header">
-                    <span>B.Tech - AI & ML</span>
-                    <span>2021 - Present</span>
-                </div>
-                <div className="item-sub">Kamala Institute of Technology & Science | CGPA: 8.1</div>
-            </div>
-            <div className="resume-item">
-                <div className="item-header">
-                    <span>Intermediate (MPC)</span>
-                    <span>2019 - 2021</span>
-                </div>
-                <div className="item-sub">Alphores Junior College | Percentage: 95.8%</div>
-            </div>
-          </section>
-
-          <section className="resume-section">
-            <h2>Projects</h2>
-            <div className="resume-item">
-                <div className="item-header">
-                    <span>STITCH & STYLE – Fabric Ville</span>
-                </div>
-                <div className="item-sub">Web Platform | Team Size: 4</div>
-                <p>A web-based platform to connect fashion designers, customers, and manufacturers. Streamlined the process of managing custom garment orders.</p>
-            </div>
-            <div className="resume-item">
-                <div className="item-header">
-                    <span>College Event Management</span>
-                </div>
-                <div className="item-sub">Frontend Development</div>
-                <p>Developed a web-based platform aimed at streamlining event management for colleges efficiently.</p>
-            </div>
-          </section>
-
-          <section className="resume-section">
-            <h2>Technical Skills</h2>
-            <div className="skill-tags">
-                <span className="skill-tag">Python</span>
-                <span className="skill-tag">Java</span>
-                <span className="skill-tag">C</span>
-                <span className="skill-tag">HTML & CSS</span>
-                <span className="skill-tag">Machine Learning</span>
-                <span className="skill-tag">Data Engineering</span>
-            </div>
-          </section>
-
-          <section className="resume-section">
-            <h2>Certifications</h2>
-            <ul className="certs-list">
-              <li>AWS Academy Cloud Computing & Data Engineering</li>
-              <li>AI for Beginners - Intel Corporation</li>
-              <li>AI Tools Workshop Certificate</li>
-            </ul>
-          </section>
+        <div className="resume-nav">
+          <button onClick={() => setViewResume(false)} className="back-btn">
+            <i className="fa-solid fa-arrow-left"></i> Back to Portfolio
+          </button>
+          <a href="/resume.pdf" download className="download-resume-btn">
+            <i className="fa-solid fa-file-pdf"></i> Download PDF
+          </a>
+        </div>
+        <div className="resume-iframe-container">
+          <iframe 
+            src="/resume.pdf#toolbar=0" 
+            title="Resume Viewer"
+            className="resume-iframe"
+          ></iframe>
         </div>
       </div>
     );
@@ -214,11 +153,11 @@ function App() {
                   <span>View Projects</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </a>
-                <a href="/resume_viewer.html" className="btn-secondary">
+                <button onClick={() => setViewResume(true)} className="btn-secondary">
                   <span>View Resume</span>
                   <i className="fa-solid fa-eye"></i>
-                </a>
-                <a href="/resume.docx" download className="btn-resume-download" title="Download Resume">
+                </button>
+                <a href="/resume.pdf" download className="btn-resume-download" title="Download Resume">
                   <i className="fa-solid fa-download"></i>
                 </a>
               </div>
