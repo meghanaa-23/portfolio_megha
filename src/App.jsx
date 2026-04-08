@@ -6,7 +6,6 @@ function App() {
   const [scrolled, setScrolled] = useState(false);
   const [typedText, setTypedText] = useState('');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [viewResume, setViewResume] = useState(false);
 
   const fullText = "Meghana Manchala";
 
@@ -62,28 +61,6 @@ function App() {
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  if (viewResume) {
-    return (
-      <div className="resume-viewer-page">
-        <div className="resume-nav">
-          <button onClick={() => setViewResume(false)} className="back-btn">
-            <i className="fa-solid fa-arrow-left"></i> Back to Portfolio
-          </button>
-          <a href="/resume.pdf" download className="download-resume-btn">
-            <i className="fa-solid fa-file-pdf"></i> Download PDF
-          </a>
-        </div>
-        <div className="resume-iframe-container">
-          <iframe 
-            src="/resume.pdf#toolbar=0" 
-            title="Resume Viewer"
-            className="resume-iframe"
-          ></iframe>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <>
@@ -154,10 +131,10 @@ function App() {
                   <span>View Projects</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </a>
-                <button onClick={() => setViewResume(true)} className="btn-secondary">
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary">
                   <span>View Resume</span>
                   <i className="fa-solid fa-eye"></i>
-                </button>
+                </a>
                 <a href="/resume.pdf" download className="btn-resume-download" title="Download Resume">
                   <i className="fa-solid fa-download"></i>
                 </a>
