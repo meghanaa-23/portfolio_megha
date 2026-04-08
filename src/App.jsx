@@ -448,21 +448,6 @@ function App() {
                   <span>Download PDF</span>
                 </a>
               </div>
-              <div className="resume-viewer">
-                <iframe 
-                  src="/resume.pdf" 
-                  title="Resume"
-                  className="resume-iframe"
-                ></iframe>
-                <div className="resume-fallback">
-                  <i className="fa-solid fa-file-pdf"></i>
-                  <p>Your browser doesn't support PDF viewing.</p>
-                  <a href="/resume.pdf" download className="btn-primary">
-                    <i className="fa-solid fa-download"></i>
-                    <span>Download Resume</span>
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </section>
