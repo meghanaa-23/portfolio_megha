@@ -127,6 +127,7 @@ function App() {
             <li><a href="#projects" className={activeSection === 'projects' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>Projects</a></li>
             <li><a href="#interests" className={activeSection === 'interests' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>How I Work</a></li>
             <li><a href="#achievements" className={activeSection === 'achievements' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>Achievements</a></li>
+            <li><a href="#resume" className={activeSection === 'resume' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>Resume</a></li>
             <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
           </ul>
         </div>
@@ -425,6 +426,42 @@ function App() {
               <div className="contact-card glass-card">
                 <h3><i className="fa-solid fa-location-dot"></i> Location</h3>
                 <p>Karimnagar</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="resume" className="section">
+          <div className="container">
+            <div className="section-header">
+              <h2>My <span className="gradient-text">Resume</span></h2>
+              <p className="section-subtitle">View or download my complete resume</p>
+            </div>
+            <div className="resume-container glass-card">
+              <div className="resume-actions">
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">
+                  <i className="fa-solid fa-eye"></i>
+                  <span>View Resume</span>
+                </a>
+                <a href="/resume.pdf" download className="btn-secondary">
+                  <i className="fa-solid fa-download"></i>
+                  <span>Download PDF</span>
+                </a>
+              </div>
+              <div className="resume-viewer">
+                <iframe 
+                  src="/resume.pdf" 
+                  title="Resume"
+                  className="resume-iframe"
+                ></iframe>
+                <div className="resume-fallback">
+                  <i className="fa-solid fa-file-pdf"></i>
+                  <p>Your browser doesn't support PDF viewing.</p>
+                  <a href="/resume.pdf" download className="btn-primary">
+                    <i className="fa-solid fa-download"></i>
+                    <span>Download Resume</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
