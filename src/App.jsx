@@ -281,17 +281,21 @@ function App() {
               </div>
               <div className="glass-card project-card">
                 <div className="project-icon">
-                  <i className="fa-solid fa-calendar-days"></i>
+                  <i className="fa-solid fa-briefcase"></i>
                 </div>
-                <h3>College Event Management</h3>
-                <p>Developing a web-based platform aimed at streamlining event management for colleges efficiently.</p>
+                <h3>Internship Tracker and Application Manager</h3>
+                <p>A web application to track internship applications, manage statuses, and streamline the job-hunting process efficiently.</p>
                 <div className="project-tags">
-                  <span className="tag">HTML</span>
-                  <span className="tag">CSS</span>
+                  <span className="tag">Web App</span>
+                  <span className="tag">Tracker</span>
                 </div>
                 <p className="project-meta">
-                  <i className="fa-solid fa-code"></i> Frontend Development
+                  <i className="fa-solid fa-code"></i> Full Stack Development
                 </p>
+                <a href="https://internship-0sf2.onrender.com" target="_blank" rel="noopener noreferrer" className="project-link">
+                  <span>View Project</span>
+                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
               </div>
             </div>
           </div>
