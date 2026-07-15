@@ -187,14 +187,14 @@ function App() {
                 <img src={profileImg} alt="Meghana Manchala" className="about-image" />
               </div>
               <div className="about-text glass-card">
-                <p>I am an aspiring AI & ML student currently in my third year of B.Tech at Kamala Institute of Technology & Science. My goal is to apply my knowledge in developing intelligent, scalable solutions and gain practical, hands-on experience in Artificial Intelligence.</p>
+                <p>I am an aspiring AI & ML student currently in my fourth year of B.Tech at Kamala Institute of Technology & Science. My goal is to apply my knowledge in developing intelligent, scalable solutions and gain practical, hands-on experience in Artificial Intelligence.</p>
                 <div className="about-stats">
                   <div className="stat-item">
                     <h3>8.1</h3>
                     <p>CGPA</p>
                   </div>
                   <div className="stat-item">
-                    <h3>3rd</h3>
+                    <h3>4th</h3>
                     <p>Year</p>
                   </div>
                   <div className="stat-item">
